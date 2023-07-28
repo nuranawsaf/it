@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Item Display</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Restuarant</h1>
+
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search items..." />
+    </div>
+
+    <div class="filter">
+      <label for="category-filter">Filter by Category:</label>
+      <select id="category-filter">
+        <option value="">All</option>
+        <option value="burger">Burger</option>
+        <option value="pizza">Pizza</option>
+        <!-- Add more options based on available categories -->
+      </select>
+    </div>
+
+    <div id="item-list"></div>
+
+    <div class="cart">
+      <h2>Cart</h2>
+      <div id="cart-count">0</div>
+      <button id="cart-increment">+</button>
+      <button id="cart-decrement">-</button>
+    </div>
+
+    <button id="admin-btn">Admin</button>
+
+    <div id="admin-popup" class="popup">
+      <h3>Admin Login</h3>
+      <input type="text" id="admin-username" placeholder="Username" />
+      <input type="password" id="admin-password" placeholder="Password" />
+      <button id="admin-login-btn">Login</button>
+    </div>
+
+    <div id="add-item-form-popup" class="popup">
+      <h3>Add New Item</h3>
+      <input type="text" id="item-name" placeholder="Item Name" />
+      <select id="item-category">
+        <option value="">Select Category</option>
+        <option value="category1">Burger</option>
+        <option value="category2">Pizza</option>
+        <!-- Add more options based on available categories -->
+      </select>
+      <button id="add-item-btn">Add Item</button>
+      <button id="close-add-item-form">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
